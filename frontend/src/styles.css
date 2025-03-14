@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* App Container */
+.app-container {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.app-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2C3E50; /* Dark Blue */
+    color: #ECF0F1; /* Light Grey */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #E74C3C; /* Red */
+}
+
+.app-description {
+    font-size: 16px;
+    color: #ECF0F1;
+}
+
+/* Main Content Layout */
+.content-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/*/* Editor and Preview Containers */
+/* Editor and Preview Containers */
+.editor-container, .preview-container {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #f4f4f4); /* Soft gradient */
+    border-radius: 12px;  /* Smooth rounded corners */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.7); /* Neumorphism effect */
+    border: 1px solid #ddd; /* Subtle border for clarity */
+    min-height: 350px;  /* Consistent height */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect to Lift the Containers */
+.editor-container:hover, .preview-container:hover {
+    transform: scale(1.02);
+}
+
+/* Editor Specific Styles */
+.editor-container {
+    border-left: 5px solid #3498DB; /* Blue theme for the editor */
+}
+
+/* Preview Specific Styles */
+.preview-container {
+    border-left: 5px solid #27AE60; /* Green theme for preview */
+}
+
+/* Titles for Sections */
+.section-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Editor & Preview Box Styling */
+.editor-box, .preview-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.05), inset -2px -2px 6px rgba(255, 255, 255, 0.7); /* Subtle depth effect */
+}
+
+/* Make Preview Content Scrollable */
+.preview-box {
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+
+/* Syntax Highlighting (Existing Styles) */
+pre {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #f8f8f2;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #2d2d2d;
+    color: #f8f8f2;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+    color: #f92672;
+}
+
+.hljs-attribute,
+.hljs-name,
+.hljs-title {
+    color: #a6e22e;
+}
+
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet {
+    color: #e6db74;
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #75715e;
+}
